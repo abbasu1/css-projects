@@ -3,61 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORLD TRAVEL | WELCOME</title>
+    <meta name="description" content="Get in touch with World Travel. We're here to help you plan your next unforgettable journey.">
+    <title>Contact Us | World Travel</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/b7847e2115.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar scrolled" id="navbar">
         <div class="container">
-            <h1 class="logu lg-heading text-light" >WT</h1>
-        <ul class="nav-items"></ul>
-        <li class="nav-item"><a href="./indexhtml">Home</a></li>
-        <li class="nav-item"><a href="./about.html">About</a></li>
-        <li class="nav-item"><a href="./contact.html">Contact</a></li>
+            <a href="./index.html" class="logo">WT</a>
+            <ul class="nav-items">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        
     </nav>
-    <section class="contact-me">
+
+    <section class="contact-section">
         <div class="container">
-        <div class="company-adress">
-            <div class="add">
-                <div class="loc">
-                    <i class="fa-solid fa-location-dot">Location</i>  
-                    <p>lahore formanities housing scheme NN-41</p>
-                </div>
-                <div class="mail">
-                    <i class="fa-solid fa-envelope">E-Mail</i>
-                    <p>abbasu2023@gmail.com</p>
-                </div>
-               <div class="call">
-                <i class="fa-solid fa-phone">CALL</i>
-                <P>03218582446</P>
-               </div>
-            </div>
-            <div class="pic pic11">
-                pic
-            </div>
-        </div>
-        <div class="user-form">
-            <h1 class="lg-heading">contact us</h1> <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, consectetur.</p>
-        
-                <form action="/action_page.php" method="get">
-                    <label for="fname">User name</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">email</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="fphone">Phone</label><br>
-                    <input type="text" id="fphone" name="pphone"><br>
-                    
-                    <label for="fmsg">Message</label><br>
-                    <textarea name="text" id="fmsg"></textarea><br>
-                    <input type="submit " class="butn" value="Submit">
-                  </form>
+            <h1 class="lg-heading text-dark">Get In Touch</h1>
+            <p class="text-dark">Have questions about a destination or want to start planning your custom trip? Drop us a message!</p>
             
+            <div class="contact-container" style="margin-top: 5rem;">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h3 class="sm-heading">Main Office</h3>
+                            <p>Lahore Formanities Housing Scheme, Sector NN-41</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h3 class="sm-heading">Email Us</h3>
+                            <p>adventure@worldtravel.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h3 class="sm-heading">Call Us</h3>
+                            <p>+92 321 8582446</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 000 0000000">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream trip..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 World Travel. Crafted for explorers everywhere.</p>
+        </div>
+    </footer>
 </body>
 </html>
